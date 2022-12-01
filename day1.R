@@ -1,5 +1,5 @@
 #Part 1
-challenge_input = readLines("input1.txt")
+challenge_input <- readLines("input1.txt")
 challenge_input <- as.integer(challenge_input)
 
 #create a variable containing the maximum calories value
@@ -39,13 +39,13 @@ for(calorie in as.list(challenge_input)){
       top3 <- top3[-length(top3)]
     }
     else if(total_calorie > top3[3]){
-      top3 <- append(top3, total_calorie, after=1)
+      top3 <- append(top3, total_calorie, after=2)
       top3 <- top3[-length(top3)]
     }
     total_calorie <- 0
     next
   }
-  total_calorie = total_calorie + calorie
+  total_calorie <- total_calorie + calorie
 }
 #return the sum of the top3 array
 print(c("The total ammount of calories carried by the top 3 elves is", sum(top3)))
