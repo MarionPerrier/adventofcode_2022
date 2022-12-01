@@ -17,7 +17,7 @@ for(calorie in as.list(challenge_input)){
     total_calorie <- 0
     next
   }
-  total_calorie = total_calorie + calorie
+  total_calorie <- total_calorie + calorie
 }
 print(c("The maximum of calories carried by an elf is : ", calories_max))
 
