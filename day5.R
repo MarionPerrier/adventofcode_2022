@@ -2,6 +2,8 @@
 #answer, but there might be more elegant and more optimised ways.
 #I am, however, proud to have finished it despite the difficulty!
 
+library(stringr)
+
 input <- readLines("input5.txt")
 
 #The input file doesn't have a proper structure. It look like this :
